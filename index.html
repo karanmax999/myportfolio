@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            scroll-behavior: smooth;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(154, 68, 245);
+            padding: 0 20px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none; 
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s, font-size 0.3s;
+        }
+        nav ul li a:hover {
+            color: rgba(30, 143, 255, 0.749);
+            font-size: 1.2rem;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            margin: 140px 20px;
+            align-items: center;
+        }
+        .firstsection div {
+            width: 45%;
+        }
+        .leftsection {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+        .rightsection img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .rightsection img:hover {
+            transform: scale(1.05);
+        }
+        .purple {
+            color: blueviolet;
+        }
+        #element {
+            color: rgb(162, 51, 242);
+        }
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 20px;
+        }
+        .secondsection h1 {
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .qualification {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .qualification:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .qualification h3 {
+            margin: 15px 0;
+            font-size: 1.8rem;
+            color: blueviolet;
+        }
+        .qualification p {
+            color: #ccc;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .project {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .project h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+            color: blueviolet;
+        }
+        .project p {
+            color: #ccc;
+        }
+        .project a {
+            color: rgba(30, 143, 255, 0.749);
+            text-decoration: none;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        .education {
+            max-width: 80vw;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .education h2 {
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .education p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+        main hr {
+            width: 100%;
+            margin: 40px 0;
+        }
+        h1 {
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Karan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="home"> <div class="leftsection"> Hi, my name is <span class="purple">Karan</span> <div>and I am a Passionate</div> <span id="element"></span> <div class="buttons"> <a href="https://www.linkedin.com/in/karan-bansal-a54648302" class="btn">Linked In</a> <a href="#contact" class="btn">Contact Me</a> </div> </div> <div class="rightsection"> <img src="bg.png" alt="Background Image"> </div> </section>
+        <hr>
+        <section class="secondsection about" id="about">
+            <h1>About Me</h1>
+            <div class="qualification">
+                <h3>UI/UX Design</h3>
+                <p>Expertise in creating intuitive and user-friendly interfaces with a focus on user experience.</p>
+            </div>
+            <div class="qualification">
+                <h3>Advanced Python</h3>
+                <p>Proficient in Python programming, including advanced concepts and frameworks.</p>
+            </div>
+            <div class="qualification">
+                <h3>HTML, CSS, and JavaScript</h3>
+                <p>Skilled in building responsive and interactive web pages using modern web technologies.</p>
+            </div>
+            <div class="qualification">
+                <h3>Communication Skills</h3>
+                <p>Excellent verbal and written communication skills, ensuring effective collaboration and presentation.</p>
+            </div>
+            <div class="qualification">
+                <h3>C++ Programming</h3>
+                <p>Solid understanding of C++ programming, including object-oriented programming and advanced concepts.</p>
+            </div>
+            <div class="qualification">
+                <h3>Data Structures and Algorithms (DSA)</h3>
+                <p>Working on mastering data structures and algorithms to solve complex problems efficiently.</p>
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection education" id="education">
+            <h2>Education</h2>
+            <p>Studied at Spring Meadows Public School (Senior Secondary)</p>
+            <p>Currently pursuing B.Tech in Computer Science and Engineering from GNIT (IPU) Campus</p>
+        </section>
+        <hr>
+        <section class="secondsection" id="projects">
+            <h1>My Projects</h1>
+            <div class="projects">
+                <div class="project">
+                    <img src="projectjain.png" alt="Project 1">
+                    <h3>JAIN BOOK DEPOT</h3>
+                    <p>Bookie specialize in unique, independent books and magazines from INDIA , showcasing the creators and endeavors preserving the art of print media.</p>
+                    <a href="https://example.com/project1" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="project2.png" alt="Project 2">
+                    <h3>CFD{Coders For Developers}</h3>
+                    <p>At CFD, we connect talented coders with top companies, providing them with a platform to showcase their skills and find their dream job or internship.</p>
+                    <a href="https://example.com/project2" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var options = {
+        strings: ["WEB DEVELOPER", " WEB Designer", "ENTHUSIAST"],
+        typeSpeed: 40,
+        backSpeed: 50,
+        loop: true
+    };
+
+    var typed = new Typed("#element", options);
+</script>
+<section id="contact" class="secondsection">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+
+
